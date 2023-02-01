@@ -71,11 +71,7 @@
     .burger__line.active {
         opacity: 0;
     }
-
 }
-
-
-
 
 .title {
     position: relative;
@@ -101,23 +97,17 @@
     }
 }
 
-
-
-
 .header__top {
     display: flex;
     justify-content: space-between;
     padding: 48px 40px 0 40px;
-
     font-size: 16px;
     line-height: 24px;
     text-transform: uppercase;
 
-
     @media (max-width:768px) {
         padding: 20px 0px 0 20px;
     }
-
 }
 
 .logo {
@@ -159,7 +149,7 @@
 
 .menu.active {
     display: block;
-    background-color: #000;
+
     content: '';
     position: absolute;
     top: 0;
@@ -170,6 +160,13 @@
     transition: all .2s;
 
     .menu__list {
+        z-index: 2;
+        background-color: #000;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
